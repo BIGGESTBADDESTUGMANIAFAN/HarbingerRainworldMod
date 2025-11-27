@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danie\\Desktop\\PROJECTS\\harb_mod_source\\src\\Harbinger.csproj": {}
+    "C:\\Users\\danie\\Desktop\\PROJECTS\\harb_mod_source\\mod_source\\src\\Harbinger.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danie\\Desktop\\PROJECTS\\harb_mod_source\\src\\Harbinger.csproj": {
+    "C:\\Users\\danie\\Desktop\\PROJECTS\\harb_mod_source\\mod_source\\src\\Harbinger.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danie\\Desktop\\PROJECTS\\harb_mod_source\\src\\Harbinger.csproj",
+        "projectUniqueName": "C:\\Users\\danie\\Desktop\\PROJECTS\\harb_mod_source\\mod_source\\src\\Harbinger.csproj",
         "projectName": "Harbinger",
-        "projectPath": "C:\\Users\\danie\\Desktop\\PROJECTS\\harb_mod_source\\src\\Harbinger.csproj",
+        "projectPath": "C:\\Users\\danie\\Desktop\\PROJECTS\\harb_mod_source\\mod_source\\src\\Harbinger.csproj",
         "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danie\\Desktop\\PROJECTS\\harb_mod_source\\src\\obj\\",
+        "outputPath": "C:\\Users\\danie\\Desktop\\PROJECTS\\harb_mod_source\\mod_source\\src\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

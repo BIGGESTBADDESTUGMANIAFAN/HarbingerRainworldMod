@@ -1,17 +1,17 @@
 ﻿//using System;
 using BepInEx;
-using UnityEngine;
-using SlugBase.Features;
-using static SlugBase.Features.FeatureTypes;
-using System.Collections.Generic;
-using MoreSlugcats;
-using RWCustom;
-using System.Runtime.CompilerServices;
-using SlugBase.SaveData;
 using IL.Menu;
 using Mono.Cecil.Cil;
 using MonoMod;
 using MonoMod.Cil;
+using MoreSlugcats;
+using RWCustom;
+using SlugBase.Features;
+using SlugBase.SaveData;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using UnityEngine;
+using static SlugBase.Features.FeatureTypes;
 using CreatureType = CreatureTemplate.Type;
 
 namespace Harbinger
@@ -167,6 +167,16 @@ namespace Harbinger
             On.Player.Grabability += Player_Grabability;
             IL.ScavengerTreasury.ctor += ScavengerTreasury_ctor;
             #endregion
+
+            //ZapLizor Hooks
+            try
+            {
+                ZapLizardStuff.InitLizor();
+            }
+            catch (System.Exception e)
+            {
+                Logger.LogError(e);
+            }
 
         }
 
@@ -559,7 +569,7 @@ namespace Harbinger
                         }
                         if (!(self.grasps[num11].grabbed as Creature).dead)
                         {
-                            for (int num12 = Random.Range(8, 14); num12 >= 0; num12--)
+                            for (int num12 = UnityEngine.Random.Range(8, 14); num12 >= 0; num12--)
                             {
                                 self.room.AddObject(new Spark(self.mainBodyChunk.pos, Custom.RNV() * UnityEngine.Random.value * 40f, new Color(1f, 1f, 1f), null, 30, 120));
                             }
